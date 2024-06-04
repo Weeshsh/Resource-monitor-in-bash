@@ -1,0 +1,42 @@
+.TH bigScript 1 "May 2024" "1.0" "Resource Monitor Project"
+.SH NAME
+bigScript \- a resource monitoring script
+.SH SYNOPSIS
+.B bigScript
+.RI [ options ]
+.SH DESCRIPTION
+.B bigScript
+is a script for monitoring system resources such as CPU usage, RAM usage, disk usage, and network activity. It can also send alerts via email when CPU usage exceeds a specified threshold.
+.SH OPTIONS
+.TP
+.B \-n
+Enable network monitoring.
+.TP
+.B \-s
+Silent mode. Do not send alerts.
+.TP
+.B \-log
+Enable logging to file.
+.TP
+.BR \-\-mail " EMAIL"
+Set the email address for alerts.
+.TP
+.BR \-\-alert " LEVEL"
+Set the CPU usage threshold for alerts (0-100).
+.TP
+.B \-\-nodisk
+Disable disk usage monitoring.
+.SH EXAMPLES
+.TP
+Monitor resources with network monitoring enabled:
+.B ./bigScript -n
+.TP
+Monitor resources and log output to a file:
+.B ./bigScript -log
+.TP
+Monitor resources with a CPU alert threshold of 80% and send alerts to specified email:
+.B ./bigScript --alert 80 --mail user@example.com
+.SH AUTHOR
+Written by Mikołaj Wiszniewski 197925.
+.SH REPORTING BUGS
+Report bugs to <your-email@example.com>.

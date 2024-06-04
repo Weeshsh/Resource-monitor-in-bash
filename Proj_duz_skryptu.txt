@@ -1,0 +1,18 @@
+Projekt dużego skryptu
+Autor: Mikołaj Wiszniewski 197925 gr.5
+Opis:
+Skrypt będzie monitorował zużycie zasobów komputera (tj. RAM/CPU/przestrzeń dyskowa itp.).
+
+Jeżeli zużycie CPU będzie powyżej x (domyślna wartość 90) procent wysyła ostrzeżenie na podanego wcześniej maila.
+
+Przy użyciu ifconfig skrypt będzie wyświetlał otrzymane/wysłane ilości pakietów w bps.
+
+Dodatkowo będzie wyświetlany uptime, statystyki procesów oraz 3 z największym zużyciem CPU.
+
+Będzie możliwość podania argumentów:
+ -n (network - domyślnie wył.) [pokazywanie pobierania/wysyłania w bps]
+ -s (silent - domyślnie wył.) [wyłączenie wysyłania komunikatów o CPU]
+ -log (domyślnie wył.) [zapisywanie danych do pliku co np. minutę]
+ --mail "" [mail na którego wysyłać info.]
+ --alert "" (alert) [od jakiego zużycia CPU wysyłać mail]
+ --nodisk [wył. wyświetlania zapełnienie dysku] 
