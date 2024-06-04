@@ -3,7 +3,7 @@
 # wartości podstawowe
 CPU_LEVEL=90
 NETWORK=false
-SILENT=false
+SILENT=true
 LOGS=false
 NO_DISK=false
 GREEN_THRESHOLD=50
