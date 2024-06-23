@@ -1,4 +1,4 @@
-# System Monitoring Script - README
+# System Monitoring Script
 
 ## Overview
 
